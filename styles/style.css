@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Montserrat+Alternates&family=Mukta&family=Red+Hat+Display&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.nav {
+    background-color: white;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-button {
+    width: fit-content;
+}
+
+.links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.link-item:link, .link-item:visited{
+    background-color: #ff1801;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 90px;
+}
+
+.link-item:active {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.yellow {
+    background-color: #edc00bfe;
+    height: 15rem;
+    padding: 60px 0;
+}
+
+.blue {
+    background-color: #081d40;
+    height: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.images-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 20%;
+    height: 250px;
+    margin: 0 5px;
+}
+
+.photo-top {
+    align-self: start;
+}
+
+.photo-bottom {
+    justify-self: end;
+}
+
+.car-image {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.teams-container {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 20%;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1px;
+    padding: 5px;
+}
+
+.team {
+    width: 100%;
+    height: 300px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1px;
+    padding: 5px;
+}
+
+.team-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.more-button {
+    justify-self: flex-end;
+}
+
+.footer {
+    background-color: #333333;
+    height: 10rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia {
+    margin: 0 5px;
+}
+
+@media (max-width: 1210px) {
+    .card, .photo {
+        width: 230px;
+    }
+    .yellow, .blue, .images-container, .teams-container {
+        height: auto;
+    }
+    .blue {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 959px) {
+    .images-container, .teams-container {
+        row-gap: 10px;
+    }
+}
